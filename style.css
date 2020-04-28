@@ -1,0 +1,109 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+body, html {
+    background: #E2E2E2;
+    height: 100%;
+}
+.mainContainer {
+    /* width: 375px; don't really need that */
+    width: 100%; /* for small screens */
+    max-width: 635px; /* this will prevent the component to be too wide on bigger screens */
+    margin: auto auto;
+    text-align: left;
+    border-radius: 10px;
+}
+.header-page {
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    background: #FFFFFF;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin: 5px;
+    color: hsl(179, 62%, 43%);
+    padding-top: 5px;
+    font-family: 'Karla', sans-serif;
+}
+
+h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+.header-page p {
+    font-size: 17px;
+    color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+.mySubscription {
+    background: hsl(179, 54%, 53%);
+    padding: 20px;
+}
+.mySub {
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 0;
+    font-size: 17px;
+}
+.price {
+    font-weight: bolder;
+    color: #FFFFFF;
+    font-family: 'Karla', sans-serif;
+}
+.dollar {
+    font-family: 'Karla', sans-serif;
+    font-size: 25px;
+}
+.mySubscription {
+    background: hsl(179, 54%, 53%);
+    padding: 20px;
+}
+.mySubscription p {
+    color: #FFFFFF;
+    font-family: 'Karla', sans-serif;
+}
+.btn {
+    width: 70%;
+    height: 30px;
+    padding: 10px;
+    margin: 15px;
+    background: hsl(71, 73%, 54%);
+    outline: none;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: hsl(71, 96%, 51%);
+    cursor: pointer;
+}
+.btn:active {
+    border-color:hsl(71, 49%, 42%);
+}
+.aboutUs {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(177, 76%, 64%);
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    color: #FFFFFF;
+}
+.aboutUs p {
+    font-weight: 400;
+}
+@media all and (min-width: 640px) {
+    .container {
+        display: flex; /* place the container's children in a row */
+    }
+    .mySubscription,
+    .aboutUs {
+      flex: 1 1 50%; /* make these 2 sections of equal width */
+    }
+}
