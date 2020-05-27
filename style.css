@@ -10,9 +10,8 @@ body, html {
     height: 100%;
 }
 .mainContainer {
-    /* width: 375px; don't really need that */
-    width: 100%; /* for small screens */
-    max-width: 635px; /* this will prevent the component to be too wide on bigger screens */
+    width: 100%; 
+    max-width: 635px; 
     margin: auto auto;
     text-align: left;
     border-radius: 10px;
@@ -100,10 +99,10 @@ h3 {
 }
 @media all and (min-width: 640px) {
     .container {
-        display: flex; /* place the container's children in a row */
+        display: flex; 
     }
     .mySubscription,
     .aboutUs {
-      flex: 1 1 50%; /* make these 2 sections of equal width */
+      flex: 1 1 50%; 
     }
 }
